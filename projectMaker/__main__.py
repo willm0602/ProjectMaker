@@ -1,9 +1,20 @@
+'''
+@author William Migdol
+@date 2/19/2020
+Automates personal coding projects with the following:
+    establishes a directory
+    creates a main python or javascript file
+    creates a word document to keep notes for the project
+    creates a GitHub repository for the project
+    creates a Trello board for the project
+'''
+import os
+import sys
 import time
-import os, sys
+
 import docx
-import subprocess
-from trello import TrelloClient 
 from github import Github
+from trello import TrelloClient
 
 #goes into project folder
 os.chdir("projects")
